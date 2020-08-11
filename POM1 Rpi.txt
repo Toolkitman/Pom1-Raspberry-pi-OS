@@ -1,0 +1,53 @@
+Please post your picture on Twitter, Instagram, or Facebook and make sure to include the hashtag #wozdomday2 in the caption of your post. 
+
+
+Dear Woz HAPPY BIRTHDAY!!!!!!,
+For your Birthday i want to share with you and my friend a little algorithm script on how i have made boot at startup
+in Raspbian Buster for Raspberry pi The Pom 1 Emulator an Apple 1 emulator. And i have made my dream come true build a cheap
+Apple 1:
+Here the script. Go to Terminal than write sudo nano /etc/rc.local and write before the line exit 0 this sudo pom1 home/pi/pom1-1.0.0/pom1
+press ctrl-X on the keyboard to close the windows.
+
+Then you must install pom1 emulator from the arch version found here: https://aur.archlinux.org/packages/pom1/ under source 1 the tar.gz file
+with this commands from terminal: 
+The simplest way to compile this package is:
+
+  1. Uncompress the file writing tar xvzf /cd/Downloads/pom1-1.0.0.tar.gz or cd the folder it is inside.
+     Open a Terminal and write: 
+     cd Downloads or the directory and go in /pom1-1.0.0/src and type
+     `./configure' to configure the package for your system.  If you're
+     using `csh' on an old version of System V, you might need to type
+     `sh ./configure' instead to prevent `csh' from trying to execute
+     `configure' itself.
+     Running `configure' takes awhile.  While running, it prints some
+     messages telling which features it is checking for.
+
+  2. Type sudo make or make in terminal to compile the package.
+
+  3. Optionally, type `make check' to run any self-tests that come with
+     the package.
+
+  4. Type then sudo make install or make install to install the programs and any data files and
+     documentation.
+
+  5. You can remove the program binaries and object files from the
+     source code directory by typing `make clean'.  To also remove the
+     files that `configure' created (so you can compile the package for
+     a different kind of computer), type `make distclean'.  There is
+     also a `make maintainer-clean' target, but that is intended mainly
+     for the package's developers.  If you use it, you may have to get
+     all sorts of other programs in order to regenerate files that came
+     with the distribution.
+
+Then  go to terminal and write sudo raspi-config and select the voice boot options then select Desktop/CLI
+and text autologin as pi.
+
+Then go back with esc to the voice Advanced Options than Resolution than 720x480 save with finish.
+Reboot
+Enjoy your new APPLE 1 emulator directly booting from startup as a real computer.
+You can find my Operative System ready to be installed in your Raspberry sd with Balena etcher and with instructions here:
+https://wiki.reactivemicro.com/POM1_Raspberrypi
+Again Happy Birthday Mr.Woz by Matteo Trevisan "Toolkitman"
+
+POM1 source: https://aur.archlinux.org/packages/pom1/
+Raspberry pi OS source: https://www.raspberrypi.org/downloads/
