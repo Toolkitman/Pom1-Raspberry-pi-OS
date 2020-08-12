@@ -14,9 +14,9 @@ The simplest way to compile this package is:
 
   0. Install SDL2: sudo apt-get install libsdl1.2-dev libcurl4-openssl-dev zlib1g-dev libzip-dev
 
-  1. Uncompress the file writing tar xvzf /cd/Downloads/pom1-1.0.0.tar.gz or cd the folder it is inside.
+  1. Uncompress the file writing tar xvzf /hom/pi/pom1-1.0.0.tar.gz or cd the folder it is inside.
      Open a Terminal and write: 
-     cd Downloads or the directory and go in /pom1-1.0.0/src and type
+     cd Downloads or the directory and go in home/pi/pom1-1.0.0 and type
      `./configure' to configure the package for your system.  If you're
      using `csh' on an old version of System V, you might need to type
      `sh ./configure' instead to prevent `csh' from trying to execute
