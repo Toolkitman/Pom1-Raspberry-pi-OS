@@ -12,6 +12,8 @@ Then you must install pom1 emulator from the arch version found here: https://au
 with this commands from terminal: 
 The simplest way to compile this package is:
 
+  0. Install SDL2: sudo apt-get install libsdl1.2-dev libcurl4-openssl-dev zlib1g-dev libzip-dev
+
   1. Uncompress the file writing tar xvzf /cd/Downloads/pom1-1.0.0.tar.gz or cd the folder it is inside.
      Open a Terminal and write: 
      cd Downloads or the directory and go in /pom1-1.0.0/src and type
