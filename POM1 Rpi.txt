@@ -41,12 +41,37 @@ The simplest way to compile this package is:
      all sorts of other programs in order to regenerate files that came
      with the distribution.
 
-Then  go to terminal and write sudo raspi-config and select the voice boot options then select Desktop/CLI
+Then go to Termianl and write sudo raspi-config and select the voice boot options then select Desktop/CLI
 and text autologin as pi.
 
 Then go back with esc to the voice Advanced Options than Resolution than 720x480 save with finish.
 Reboot
 Enjoy your new APPLE 1 emulator directly booting from startup as a real computer.
+To Enjoy the most original boot as an Apple 1 (black screen) do this passage:
+Open a Terminal and write: sudo nano /boot/config.txt
+Then add below line at the end of the file.
+disable_splash=1
+Then
+sudo nano /usr/share/plymouth/themes/pix/pix.script
+Then, remove (or comment out) four lines below:
+
+message_sprite = Sprite();
+message_sprite.SetPosition(screen_width * 0.1, screen_height * 0.9, 10000);
+
+my_image = Image.Text(text, 1, 1, 1);
+message_sprite.SetImage(my_image);
+
+Then
+sudo nano /boot/cmdline.txt
+replace “console=tty1” with “console=tty3”. This redirects boot messages to tty3.
+
+Then
+Still in “/boot/cmdline.txt”, add below at the end of the line
+splash quiet plymouth.ignore-serial-consoles logo.nologo vt.global_cursor_default=0
+
+Finally
+sudo reboot
+
 You can find my Operative System ready to be installed in your Raspberry sd with Balena etcher and with instructions here:
 https://wiki.reactivemicro.com/POM1_Raspberrypi
 Again Happy Birthday Mr.Woz by Matteo Trevisan "Toolkitman"
