@@ -78,3 +78,5 @@ Again Happy Birthday Mr.Woz by Matteo Trevisan "Toolkitman"
 
 POM1 source: https://aur.archlinux.org/packages/pom1/
 Raspberry pi OS source: https://www.raspberrypi.org/downloads/
+
+This written was built in WOZDOMDAY BIRTHDAY CHARITY DAYS
